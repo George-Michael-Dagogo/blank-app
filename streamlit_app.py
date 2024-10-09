@@ -247,7 +247,7 @@ def insert_staff_data(staff_name, gender, position, monthly_pay, years_of_experi
 # [Add similar fetch and update functions for parent and staff data]
 
 def main():
-    st.title("Datafest School Database Management")
+    st.title("Goodness and Mercy School Database Management")
 
        # Initialize session state for login
     if 'logged_in' not in st.session_state:
@@ -267,7 +267,7 @@ def main():
                 else:
                     st.error("Incorrect username or password")
         else:
-            st.subheader(f"Welcome, {st.session_state['username']}!")
+            st.subheader(f"Welcome to Goodness and Mercy School!")
             if st.button("Logout"):
                 logout_user()
                 st.rerun()
@@ -277,7 +277,7 @@ def main():
         # Sidebar Navigation
         st.sidebar.title("Navigation")
         page = st.sidebar.selectbox("Choose a page", ["Student Data Entry", "Parent Data Entry", "Staff Data Entry", 
-                                                      "Update Student Data", "Update Parent Data", "Update Staff Data","Visualizations"])
+                                                      "Update Student Data", "Update Parent Data","Visualizations"])
 
         
         # Page 1: Student Data Entry
