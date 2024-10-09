@@ -50,7 +50,7 @@ def logout_user():
 
 def generate_student_id():
     # Generate a random 8-digit number
-    student_id = fake.unique.uuid4().replace('-','')
+    student_id = str(uuid.uuid4())
 
     
     return student_id
