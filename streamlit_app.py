@@ -293,7 +293,7 @@ def main():
             state_of_origin = st.text_input("state_of_origin")
             engagement_in_class = st.text_input("Engagement in class")
             health_condition = st.text_input("Health Condition")
-            class_id = st.selectbox("class_ID", options=['SS1 class D', 'SS1 class C', 'SS3 class F', 'SS1 class E','SS2 class E', 'SS2 class A', 'SS2 class B', 'SS3 class A','SS1 class B', 'SS2 class D', 'SS3 class C', 'SS1 class F','SS3 class D', 'SS3 class B', 'SS3 class E', 'SS2 class C','SS1 class A', 'SS2 class F'])
+            class_id = st.selectbox("class_ID", options=['SS1 Class D', 'SS1 Class C', 'SS3 Class F', 'SS1 Class E','SS2 Class E', 'SS2 Class A', 'SS2 Class B', 'SS3 Class A','SS1 Class B', 'SS2 Class D', 'SS3 Class C', 'SS1 Class F','SS3 Class D', 'SS3 Class B', 'SS3 Class E', 'SS2 Class C','SS1 Class A', 'SS2 Class F'])
             class_spec = st.selectbox("class Spec", options=['Science', 'Art'])
             if st.button("Submit Student Data"):
                 if first_name and family_name and gender and date_of_birth and state_of_origin and engagement_in_class and health_condition and class_id and class_spec:
